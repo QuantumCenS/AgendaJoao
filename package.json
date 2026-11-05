@@ -1,0 +1,20 @@
+{
+  "name": "recall",
+  "version": "1.0.0",
+  "description": "Agenda de estudo com repetição espaçada. Os dados ficam no teu dispositivo.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "node --test \"test/unit/*.test.js\"",
+    "test:e2e": "node --test --test-concurrency=1 \"test/e2e/*.test.js\"",
+    "test:all": "npm test && npm run test:e2e",
+    "seed": "node scripts/seed.js"
+  },
+  "devDependencies": {
+    "playwright-core": "1.56.1"
+  }
+}

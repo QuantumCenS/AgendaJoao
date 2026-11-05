@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Recall</title>
+  <meta name="description" content="Agenda de estudo com repetição espaçada. Os dados ficam no teu dispositivo.">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131614" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+  <div class="app" id="app">
+    <nav class="sidebar" id="sidebar" aria-label="Principal"></nav>
+    <main class="main" id="main" tabindex="-1"></main>
+    <aside class="pane" id="pane" aria-label="Revisão"></aside>
+    <nav class="tabs" id="tabs" aria-label="Principal"></nav>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"><span id="toast-text"></span><button type="button" class="toast-action" id="toast-action" data-click="toastAction" hidden></button></div>
+  <noscript>O Recall precisa de JavaScript para funcionar.</noscript>
+  <script type="module" src="src/ui/app.js"></script>
+</body>
+</html>
